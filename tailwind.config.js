@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'purple-gradient': 'linear-gradient(to bottom, #4F469C, #938AE5)',
+      },
+      fontFamily: {
+        'sf-pro': ['"SF Pro Display"', 'sans-serif'],
       },
     },
   },

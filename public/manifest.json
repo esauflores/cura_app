@@ -1,0 +1,25 @@
+{
+  "short_name": "Cura Healthcare",
+  "name": "Cura Healthcare App",
+  "icons": [
+    {
+      "src": "/icons/logo_purple.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icons/logo_purple_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icons/logo_purple_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,82 @@
+/* Font sf-pro-display 
+    src: /fonts/sf-pro/display 
+    type: otf
+*/
+
+/* Regular */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.OTF") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Black italic */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYBLACKITALIC.OTF")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Heavy italic */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYHEAVYITALIC.OTF")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Light italic */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYLIGHTITALIC.OTF")
+    format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Semibold italic */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYSEMIBOLDITALIC.OTF")
+    format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Thin italic */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYTHINITALIC.OTF")
+    format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* Ultralight italic */
+@font-face {
+  font-family: "sf-pro-display";
+  src: url("/fonts/sf-pro-display/SFPRODISPLAYULTRALIGHTITALIC.OTF")
+    format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
