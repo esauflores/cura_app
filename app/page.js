@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="relative flex min-h-screen w-screen flex-row overflow-hidden bg-purple-gradient text-center text-white">
       <div
-        className={`invisible absolute left-2/3 top-[15vh] flex w-full flex-col items-center opacity-0 sm:left-1/3 ${currentStep == 0 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible -translate-x-2/3 !opacity-0 duration-1000 sm:-translate-x-1/3" : ""}`}
+        className={`invisible absolute left-2/3 top-[15vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 0 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible -translate-x-2/3 transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""}`}
       >
         <Image
           src="/icons/logo_white.ico"
@@ -38,7 +38,7 @@ export default function Home() {
       </div>
 
       <div
-        className={`invisible absolute left-2/3 top-[15vh] flex w-full flex-col items-center opacity-0 sm:left-1/3 ${currentStep == 1 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible -translate-x-2/3 !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible !left-2/3 -translate-x-2/3 opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
+        className={`invisible absolute left-2/3 top-[15vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 1 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible -translate-x-2/3 transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible !left-2/3 -translate-x-2/3 transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <Image
           src="/icons/logo_white.ico"
