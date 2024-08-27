@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <div className="text-center">
       <header className="bg-purple-gradient min-h-screen pt-[calc(20vh+5px)] flex flex-col items-center text-white text-[calc(10px+2vmin)]">
-        <Image src="/icons/logo_white.ico" alt="logo" width={100} height={100} className="pointer-events-none h-[20vh] w-auto" />
+        <Image src="/icons/logo_white.ico" alt="logo" width={100} height={100} className="pointer-events-none h-[20vh] w-auto" priority />
 
         <h1>Cura</h1>
 
