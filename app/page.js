@@ -51,7 +51,7 @@ export default function Home() {
         </h3>
 
         {isInstallable && (
-          <button id="install" onClick={handleInstallClick} type="button" className="mt-6 text-white bg-purple-500 hover:bg-purple-700 focus:ring-4 focus:ring-purple-600 font-medium rounded-lg me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 px-7 py-5 text-2xl md:px-5 md:py-2.5 md:text-xl">
+          <button id="install" onClick={handleInstallClick} type="button" className="mt-6 text-white bg-purple-800 hover:bg-purple-700 focus:ring-4 focus:ring-purple-600 font-medium rounded-lg me-2 mb-2 focus:outline-none px-7 py-5 text-2xl md:px-5 md:py-2.5 md:text-xl">
             Install
           </button>
         )}
