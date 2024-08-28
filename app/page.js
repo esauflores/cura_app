@@ -28,7 +28,7 @@ export default function Index() {
     <div className="relative flex min-h-screen w-screen flex-row overflow-hidden bg-purple-gradient text-center text-white">
       {/* Step 1: Cura Logo */}
       <div
-        className={`invisible absolute left-2/3 top-[15vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 0 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible -translate-x-2/3 transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""}`}
+        className={`invisible absolute left-full top-[15vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 0 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""}`}
       >
         <Image
           src="/icons/logo_white.ico"
@@ -47,10 +47,10 @@ export default function Index() {
 
       {/* Step 2: Choose your desire package */}
       <div
-        className={`invisible absolute left-2/3 top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 1 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible -translate-x-2/3 transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible !left-2/3 -translate-x-2/3 transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
+        className={`invisible absolute left-full top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 1 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible !left-full -translate-x-full transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <div className="relative mx-auto flex h-[50vh] w-full flex-row items-center justify-center gap-8">
-          <div className="shadow-big relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
+          <div className="shadow-big relative z-10 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
             <div className="rounded-t-lg bg-[#938ae5] p-4">
               <p className="text-base font-medium leading-5">
                 Standard Package
@@ -128,7 +128,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="absolute left-[calc(50vw-100px)] top-0 z-0 max-w-sm rounded-lg border-2 border-gray-200 bg-[#E2E2E2] text-left">
+          <div className="absolute left-[calc(50vw-100px)] top-[5px] z-0 max-w-sm rounded-lg border-2 border-gray-200 bg-[#E2E2E2] text-left">
             <div className="rounded-t-lg bg-[#685DC5] p-4">
               <p className="text-base font-medium leading-5">Premium Package</p>
               <p className="mt-1 text-sm font-normal leading-4">1000 Baht</p>
@@ -222,11 +222,22 @@ export default function Index() {
                   Translation service for treatment
                 </p>
               </div>
+              <div className="flex flex-row items-start gap-2 px-4 text-black">
+                <Image
+                  src="/icons/minus-check.svg"
+                  alt="check"
+                  width={20}
+                  height={20}
+                />
+                <p className="text-gray-400">
+                  Translation service for treatment
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <h3 className="mt-16">
+        <h3 className="mt-10">
           Choose your <br />
           desire package
         </h3>
@@ -238,7 +249,7 @@ export default function Index() {
 
       {/* Step 3: Choose your desire package */}
       <div
-        className={`invisible absolute left-2/3 top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 2 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 2 ? "transition-[transform, shadow] !visible -translate-x-2/3 transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible !left-2/3 -translate-x-2/3 transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
+        className={`invisible absolute left-full top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 2 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 2 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible !left-full -translate-x-full transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <div className="relative mx-auto flex h-[50vh] w-full flex-row items-center justify-center gap-8">
           <div className="shadow-big relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
@@ -319,7 +330,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="absolute left-[calc(50vw-100px)] top-0 z-0 max-w-sm rounded-lg border-2 border-gray-200 bg-[#E2E2E2] text-left">
+          <div className="absolute left-[calc(50vw-100px)] top-[5px] z-0 max-w-sm rounded-lg border-2 border-gray-200 bg-[#E2E2E2] text-left">
             <div className="rounded-t-lg bg-[#685DC5] p-4">
               <p className="text-base font-medium leading-5">Premium Package</p>
               <p className="mt-1 text-sm font-normal leading-4">1000 Baht</p>
@@ -413,11 +424,22 @@ export default function Index() {
                   Translation service for treatment
                 </p>
               </div>
+              <div className="flex flex-row items-start gap-2 px-4 text-black">
+                <Image
+                  src="/icons/minus-check.svg"
+                  alt="check"
+                  width={20}
+                  height={20}
+                />
+                <p className="text-gray-400">
+                  Translation service for treatment
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <h3 className="mt-16">
+        <h3 className="mt-10">
           Choose your <br />
           desire package
         </h3>
@@ -429,7 +451,7 @@ export default function Index() {
 
       {/* Step 4: Choose your desire package */}
       <div
-        className={`invisible absolute left-2/3 top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 3 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 3 ? "transition-[transform, shadow] !visible -translate-x-2/3 transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 2 ? "transition-[transform, shadow] !visible !left-2/3 -translate-x-2/3 transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
+        className={`invisible absolute left-full top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 3 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 3 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 2 ? "transition-[transform, shadow] !visible !left-full -translate-x-full transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <div className="relative mx-auto flex h-[50vh] w-full flex-row items-center justify-center gap-8">
           <div className="shadow-big relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
@@ -510,7 +532,7 @@ export default function Index() {
             </div>
           </div>
 
-          <div className="absolute left-[calc(50vw-100px)] top-0 z-0 max-w-sm rounded-lg border-2 border-gray-200 bg-[#E2E2E2] text-left">
+          <div className="absolute left-[calc(50vw-100px)] top-[5px] z-0 max-w-sm rounded-lg border-2 border-gray-200 bg-[#E2E2E2] text-left">
             <div className="rounded-t-lg bg-[#685DC5] p-4">
               <p className="text-base font-medium leading-5">Premium Package</p>
               <p className="mt-1 text-sm font-normal leading-4">1000 Baht</p>
@@ -604,11 +626,22 @@ export default function Index() {
                   Translation service for treatment
                 </p>
               </div>
+              <div className="flex flex-row items-start gap-2 px-4 text-black">
+                <Image
+                  src="/icons/minus-check.svg"
+                  alt="check"
+                  width={20}
+                  height={20}
+                />
+                <p className="text-gray-400">
+                  Translation service for treatment
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        <h3 className="mt-16">
+        <h3 className="mt-10">
           Choose your <br />
           desire package
         </h3>
