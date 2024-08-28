@@ -20,6 +20,9 @@ module.exports = {
       fontFamily: {
         'sf-pro': ['"SF Pro Display"', 'sans-serif'],
       },
+      boxShadow: {
+        'big': '0 4px 100px rgba(0, 0, 0, 0.8)',
+      },
     },
   },
   plugins: [
