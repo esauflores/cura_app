@@ -50,7 +50,7 @@ export default function Index() {
         className={`invisible absolute left-full top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 1 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible !left-full -translate-x-full transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <div className="relative mx-auto flex h-[50vh] w-full flex-row items-center justify-center gap-8">
-          <div className="shadow-big relative z-10 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
+          <div className="relative z-10 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left shadow-big">
             <div className="rounded-t-lg bg-[#938ae5] p-4">
               <p className="text-base font-medium leading-5">
                 Standard Package
@@ -252,7 +252,7 @@ export default function Index() {
         className={`invisible absolute left-full top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 2 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 2 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 1 ? "transition-[transform, shadow] !visible !left-full -translate-x-full transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <div className="relative mx-auto flex h-[50vh] w-full flex-row items-center justify-center gap-8">
-          <div className="shadow-big relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
+          <div className="relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left shadow-big">
             <div className="rounded-t-lg bg-[#938ae5] p-4">
               <p className="text-base font-medium leading-5">
                 Standard Package
@@ -454,7 +454,7 @@ export default function Index() {
         className={`invisible absolute left-full top-[5vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 3 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 3 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""} ${isAnimating && currentStep == 2 ? "transition-[transform, shadow] !visible !left-full -translate-x-full transform opacity-100 duration-1000 sm:!left-1/3 sm:-translate-x-1/3" : ""}`}
       >
         <div className="relative mx-auto flex h-[50vh] w-full flex-row items-center justify-center gap-8">
-          <div className="shadow-big relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left">
+          <div className="relative z-10 mt-5 w-[250px] max-w-sm rounded-lg border-2 border-gray-200 bg-white text-left shadow-big">
             <div className="rounded-t-lg bg-[#938ae5] p-4">
               <p className="text-base font-medium leading-5">
                 Standard Package

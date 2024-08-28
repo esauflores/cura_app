@@ -3,17 +3,17 @@
   "name": "Cura Healthcare App",
   "icons": [
     {
-      "src": "/icons/logo_purple.ico",
+      "src": "/icons/logo_combined.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "/icons/logo_purple_192.png",
+      "src": "/icons/logo_combined_192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icons/logo_purple_512.png",
+      "src": "/icons/logo_combined_512.png",
       "type": "image/png",
       "sizes": "512x512"
     }

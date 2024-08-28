@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icons/logo_white.ico" />
+        <link rel="icon" href="/icons/logo_combined.ico" />
         <link
           rel="manifest"
           href="/manifest.webmanifest"
