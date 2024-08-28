@@ -25,7 +25,7 @@ export default function Index() {
   };
 
   return (
-    <div className="relative flex min-h-screen w-screen flex-row overflow-hidden bg-purple-gradient text-center text-white">
+    <div className="h-safe-area-inset-top relative flex min-h-screen w-screen flex-row overflow-hidden bg-purple-gradient text-center text-white">
       {/* Step 1: Cura Logo */}
       <div
         className={`invisible absolute left-full top-[15vh] flex w-full flex-col items-center opacity-0 ease-in-out sm:left-1/3 ${currentStep == 0 ? "!visible !left-0 opacity-100" : ""} ${isAnimating && currentStep == 0 ? "transition-[transform, shadow] !visible -translate-x-full transform !opacity-0 duration-1000 sm:-translate-x-1/3" : ""}`}
