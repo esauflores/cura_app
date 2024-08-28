@@ -5,6 +5,12 @@ export const metadata = {
   description: "A healthcare app for managing your health",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  viewportFit: "cover",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -15,18 +21,16 @@ export default function RootLayout({ children }) {
           href="/manifest.webmanifest"
           crossOrigin="use-credentials"
         />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, viewport-fit=cover"
-        />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#4F469C" />
         <meta
           name="apple-mobile-web-app-status-bar-style"
           content="black-translucent"
         />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
       </head>
-      <body>{children}</body>
+      <body>
+        <div className="safe-area-content">{children}</div>
+      </body>
     </html>
   );
 }

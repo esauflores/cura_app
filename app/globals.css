@@ -4,14 +4,16 @@
 
 @import url("fonts.css");
 
-.h-safe-area-inset-top {
-  height: env(safe-area-inset-top);
+/* styles/globals.css */
+body {
+  margin: 0;
+  padding: 0;
 }
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.safe-area-content {
+  padding-top: env(safe-area-inset-top); /* Fallback value is 20px */
+  min-height: 100vh; /* Ensure the container takes full viewport height */
+  background-color: #6b63ff; /* Example background color */
 }
 
 @media (prefers-color-scheme: dark) {
