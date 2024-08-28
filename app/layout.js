@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           content="black-translucent"
         />
       </head>
-      <body class="h-safe-area-inset-top">{children}</body>
+      <body className="h-safe-area-inset-top">{children}</body>
     </html>
   );
 }
