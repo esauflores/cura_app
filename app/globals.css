@@ -4,6 +4,10 @@
 
 @import url("fonts.css");
 
+.h-safe-area-inset-top {
+  height: env(safe-area-inset-top);
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
