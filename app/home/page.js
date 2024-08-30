@@ -286,7 +286,7 @@ export default function Home() {
         <div className="flex justify-around p-4">
           <a href="#home" className="hover:text-gray-400">
             <div className="flex flex-col items-center justify-center">
-              <Image src="/icons/Home.svg" alt="home" width={32} height={32} />
+              <Image src="/icons/home.svg" alt="home" width={32} height={32} />
               Home
             </div>
           </a>
