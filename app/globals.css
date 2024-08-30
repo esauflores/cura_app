@@ -11,9 +11,7 @@ body {
 }
 
 .safe-area-content {
-  padding-top: env(safe-area-inset-top); /* Fallback value is 20px */
   min-height: 100vh; /* Ensure the container takes full viewport height */
-  background-color: #6b63ff; /* Example background color */
 }
 
 @media (prefers-color-scheme: dark) {

@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/icons/logo_combined.ico" />
         <link
           rel="manifest"
-          href="/manifest.webmanifest"
+          href="/manifest.json"
           crossOrigin="use-credentials"
         />
         <meta name="theme-color" content="#4F469C" />
@@ -27,9 +27,11 @@ export default function RootLayout({ children }) {
           content="black-translucent"
         />
         <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body>
         <div className="safe-area-content">{children}</div>
+        <script src="/js/flowbite.min.js" defer></script>
       </body>
     </html>
   );
