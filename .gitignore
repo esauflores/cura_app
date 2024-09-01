@@ -39,5 +39,5 @@ next-env.d.ts
 .vercel
 
 # prisma
-/prisma/migrations
+prisma/migrations
 
