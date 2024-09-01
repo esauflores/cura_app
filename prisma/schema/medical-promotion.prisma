@@ -1,0 +1,15 @@
+// prisma/schema/medical-promotion.prisma
+model MedicalPromotion {
+  // Core fields
+  id          String   @id @default(cuid())
+  name        String
+  description String
+  image_url   String
+  price       Float
+  expires_at  DateTime
+
+  // Lifecycle records
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+}

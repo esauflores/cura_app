@@ -1,0 +1,15 @@
+// prisma/schema/medical-facility.prisma
+model MedicalFacility {
+  // Core fields
+  id          Int     @id @default(autoincrement())
+  name        String  @unique
+  image_url   String?
+  description String?
+  review_score Float  @default(0)
+  review_text String?
+
+  // Lifecycle records
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  deleted_at DateTime?
+}
